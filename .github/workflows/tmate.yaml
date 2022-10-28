@@ -12,10 +12,9 @@ on:
         required: false
         default: false
         
-  jobs:
+jobs:
   tmate:
     runs-on: ${{ matrix.os }}
-    needs: run_setup
     strategy:
       matrix:
         os: [macOS-latest, ubuntu-20.04, windows-latest]
